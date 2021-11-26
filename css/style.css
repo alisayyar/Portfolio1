@@ -1,0 +1,212 @@
+/* css resets of the site */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+/* Images can not be bigger than their parent element  */
+img {
+  max-width: 100%;
+}
+/* Clearing the decoration of a tags(Links) */
+a {
+  text-decoration: none;
+}
+/* Start of the header section styles */
+header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  min-height: 500px;
+  background-image: linear-gradient(
+      rgba(250, 48, 0, 0.8),
+      rgba(250, 48, 0, 0.8)
+    ),
+    url(../images/header-back.jpg);
+}
+.head-section {
+  text-align: center;
+  margin: auto;
+}
+.avatar-light-bg {
+  display: flex;
+  align-items: center;
+  width: 140px;
+  height: 140px;
+  margin: auto;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.avatar-light-bg img {
+  margin: auto;
+  width: 130px;
+  border-radius: 50%;
+}
+.first-paraghraph {
+  color: #ffffff;
+  font-size: 2rem;
+  margin: 2rem 1rem;
+  text-shadow: 1px 1px 4px #000000;
+}
+.second-paraghraph {
+  color: #ffffff;
+  font-size: 1rem;
+  margin: 3rem 2rem;
+}
+.contact-link {
+  text-transform: capitalize;
+  margin: 1rem;
+  color: rgb(250, 48, 0);
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  box-shadow: 1px 1px 3px #101010;
+}
+.contact-link:hover {
+  background: none;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 0 4px #ffffff;
+  transition: all 350ms;
+}
+/* End of the header section styles */
+/* ------------------------------------------------------------------------------ */
+/* Start of the projects section */
+.project {
+  padding: 4rem 0;
+}
+.projects-head {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  justify-content: space-around;
+}
+.projects {
+  overflow: hidden;
+  text-align: center;
+  width: 20%;
+  margin: 3rem 1rem;
+  border-radius: 5px;
+}
+.projects img {
+  height: 100%;
+  transition: all 200ms ease-in;
+}
+
+.projects img:hover {
+  transform: scale(1.2);
+  transition: all 400ms;
+}
+
+/* End of the projects section */
+/* ------------------------------------------------------------------------------ */
+/* start of the social media styles */
+.social-media {
+  padding: 3rem 0;
+  background-color: #222831;
+  text-align: center;
+}
+.social-paraghraph {
+  color: #808080;
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+}
+.social-paraghraph a {
+  color: #393e66;
+  line-height: 1.6;
+}
+.social-link {
+  padding: 1rem 2rem;
+  background-color: #1da1f2;
+  border-radius: 3px;
+  color: #ffffff;
+}
+/* End of the social media styles */
+/* ------------------------------------------------------------------------------ */
+/* Footer Styles */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+.footer-leftbox {
+  width: 40%;
+  text-align: center;
+}
+.footer-leftbox a {
+  color: #808080;
+  margin: 0 0.5rem;
+  font-size: 20px;
+}
+.footer-rightbox {
+  width: 40%;
+  text-align: center;
+}
+.footer-rightbox p {
+  color: #808080;
+}
+/* End of footer styles */
+/* ------------------------------------------------------------------------------ */
+/* Media queries for responsiveness */
+@media screen and (min-width: 0px) and (max-width: 290px) {
+  .contact-link {
+    display: block;
+  }
+}
+@media screen and (max-width: 480px) {
+  .first-paraghraph {
+    font-size: 1.1rem;
+  }
+  .second-paraghraph {
+    font-size: 0.7rem;
+  }
+  .projects-head {
+    width: 100%;
+  }
+  .projects {
+    width: 80%;
+  }
+  .social-paraghraph {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+  .social-link {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .first-paraghraph {
+    font-size: 1.5rem;
+  }
+  .second-paraghraph {
+    font-size: 0.9rem;
+  }
+  .projects-head {
+    width: 100%;
+  }
+  .projects {
+    width: 40%;
+  }
+  .social-media {
+    padding: 3rem 1rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .projects-head {
+    width: 100%;
+  }
+  .projects {
+    width: 25%;
+  }
+}
+/* End of media queries */

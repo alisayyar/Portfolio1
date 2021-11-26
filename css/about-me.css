@@ -1,0 +1,195 @@
+/* css resets of the site */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+/* Images can not be bigger than their parent element  */
+img {
+  max-width: 100%;
+}
+/* Clearing the decoration of a tags(Links) */
+a {
+  text-decoration: none;
+}
+/* Start of the header section styles */
+header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  min-height: 500px;
+  background-image: linear-gradient(
+      rgba(250, 48, 0, 0.8),
+      rgba(250, 48, 0, 0.8)
+    ),
+    url(../images/header-back.jpg);
+}
+.head-section {
+  text-align: center;
+  margin: auto;
+}
+.avatar-light-bg {
+  display: flex;
+  align-items: center;
+  width: 140px;
+  height: 140px;
+  margin: auto;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.avatar-light-bg img {
+  margin: auto;
+  width: 130px;
+  border-radius: 50%;
+}
+.first-paraghraph {
+  color: #ffffff;
+  font-size: 2rem;
+  margin: 2rem 1rem;
+  text-shadow: 1px 1px 4px #000000;
+}
+.second-paraghraph {
+  color: #ffffff;
+  font-size: 1rem;
+  margin: 3rem 2rem;
+}
+.contact-link {
+  text-transform: capitalize;
+  margin: 1rem;
+  color: rgb(250, 48, 0);
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  box-shadow: 1px 1px 3px #101010;
+}
+.contact-link:hover {
+  background: none;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 0 4px #ffffff;
+  transition: all 350ms;
+}
+/* End of the header section styles */
+/* ------------------------------------------------------------------------------ */
+/* About Me */
+.about {
+  padding: 4rem 0;
+}
+h1 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: #ff4500;
+}
+h2 {
+  text-transform: capitalize;
+  color: #ff4500;
+}
+.about-sub {
+  text-align: center;
+  text-transform: capitalize;
+  color: #808080;
+  margin-bottom: 2rem;
+}
+.about-box {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.skills,
+.bio {
+  width: 50%;
+  padding: 1.5rem 1rem;
+}
+.skills p,
+.bio p {
+  padding: 10px;
+  line-height: 1.6;
+}
+
+/* ------------------------------------------------------------------------------ */
+/* Footer Styles */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 2.5rem;
+  padding-bottom: 1.5rem;
+  background-color: #ff4500;
+}
+.footer-leftbox {
+  width: 40%;
+  text-align: center;
+}
+.footer-leftbox a {
+  color: #ffffff;
+  margin: 0 0.5rem;
+  font-size: 20px;
+}
+.footer-rightbox {
+  width: 40%;
+  text-align: center;
+}
+.footer-rightbox p {
+  color: #ffffff;
+}
+/* End of footer styles */
+/* ------------------------------------------------------------------------------ */
+/* Media queries for responsiveness */
+@media screen and (min-width: 0px) and (max-width: 305px) {
+  .contact-link {
+    display: block;
+  }
+}
+@media screen and (max-width: 480px) {
+  .first-paraghraph {
+    font-size: 1.1rem;
+  }
+  .second-paraghraph {
+    font-size: 0.7rem;
+  }
+  .contact-link {
+    margin: 1rem 10px;
+  }
+  h2 {
+    text-align: center;
+  }
+  .about-box {
+    width: 90%;
+  }
+  .skills,
+  .bio {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .first-paraghraph {
+    font-size: 1.5rem;
+  }
+  .second-paraghraph {
+    font-size: 0.9rem;
+  }
+  h2 {
+    text-align: center;
+  }
+  .about-box {
+    width: 90%;
+  }
+  .skills,
+  .bio {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 991px) {
+}
+/* End of media queries */
